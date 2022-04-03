@@ -14,7 +14,7 @@ use coding\app\controllers\adminControllers\PublisherController;
 use coding\app\controllers\adminControllers\UserManageController;
 use coding\app\controllers\adminControllers\UsersController;
 use coding\app\controllers\adminControllers\CategoriesController as AdminCategoriesController;
-
+use coding\app\controllers\adminControllers\RolesController;
 // ------------------------------------------------------
 use coding\app\controllers\userControllers\AboutController;
 use coding\app\controllers\userControllers\CategoriesController;
@@ -77,6 +77,8 @@ Router::use('/admin/', function ($req, $res) {
   Router::get($res->URL . 'author', [AuthorController::class, 'show']);
   Router::get($res->URL . 'userManage', [UserManageController::class, 'show']);
   Router::get($res->URL . 'users', [UsersController::class, 'show']);
+  Router::get($res->URL . 'roles', [RolesController::class, 'show']);
+
 
   // POST 
 
@@ -86,11 +88,17 @@ Router::use('/admin/', function ($req, $res) {
   Router::post($res->URL . 'addPublisher', [PublisherController::class, 'addNew']);
   Router::post($res->URL . 'addAuthor', [AuthorController::class, 'addNew']);
   Router::post($res->URL . 'addBook', [BooksController::class, 'addNew']);
+  Router::post($res->URL . 'addRole', [RolesController::class, 'addNew']);
+
 
 
   Router::put($res->URL . 'editCity', [CitiesController::class, 'editItem']);
   Router::put($res->URL . 'restoreCity', [CitiesController::class, 'restoreItem']);
   Router::delete($res->URL . 'deleteCity', [CitiesController::class, 'deleteItem']);
+
+  Router::put($res->URL . 'editRole', [RolesController::class, 'editItem']);
+  Router::put($res->URL . 'restoreRole', [RolesController::class, 'restoreItem']);
+  Router::delete($res->URL . 'deleteRole', [RolesController::class, 'deleteItem']);
 
   Router::post($res->URL . 'editPayment', [PaymentsController::class, 'editItem']);
   Router::put($res->URL . 'restorePayment', [PaymentsController::class, 'restoreItem']);
@@ -108,7 +116,7 @@ Router::use('/admin/', function ($req, $res) {
   Router::put($res->URL . 'restoreCategory', [AdminCategoriesController::class, 'restoreItem']);
   Router::delete($res->URL . 'deleteCategory', [AdminCategoriesController::class, 'deleteItem']);
 
-  Router::put($res->URL . 'editBook', [BooksController::class, 'editItem']);
+  Router::post($res->URL . 'editBook', [BookDetailsController::class, 'editItem']);
   Router::put($res->URL . 'restoreBook', [BooksController::class, 'restoreItem']);
   Router::delete($res->URL . 'deleteBook', [BooksController::class, 'deleteItem']);
 

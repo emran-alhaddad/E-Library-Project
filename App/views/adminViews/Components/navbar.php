@@ -48,18 +48,6 @@
                                 <a href="/admin/users" class="">Accounts</a>
                             </li>
                             <li class="">
-                                <a href="/admin/user_profiles" class="">Profiles</a>
-                            </li>
-                            <li class="">
-                                <a href="/admin/user_addresses" class="">Addresses</a>
-                            </li>
-                            <li class="">
-                                <a href="/admin/user_payment_methods" class="">Payment Methods</a>
-                            </li>
-                            <li class="">
-                                <a href="/admin/user_tokens" class="">Tokens</a>
-                            </li>
-                            <li class="">
                                 <a href="/admin/roles" class="">Roles</a>
                             </li>
                         </ul>

@@ -74,25 +74,7 @@ class BooksController extends Controller
         AppSystem::$appSystem->response->redirect("/admin/books");
     }
 
-    public function editItem()
-    {
-        $this->book->name = $_POST['name'];
-        $this->book->created_by = 2;
-        $this->book->updated_at = "" . date("Y-m-d H:i:s", time());
 
-        if (isset($_FILES['image'])) {
-            $oldImage = $this->book->getSingle("id=" . $_POST['id'])[0]->image;
-            $this->book->image = SystemUtils::uploadFile($_FILES['image'], StaticPaths::CATEGORIES, $oldImage);
-        }
-
-
-        if ($this->book->update("id=" . $_POST['id']))
-            $_SESSION['alert'] = ['type' => 'success', 'msg' => "Book Updated Successfully"];
-        else
-            $_SESSION['alert'] = ['type' => 'danger', 'msg' => "Cannot Update Book !!!"];
-
-        echo true;
-    }
 
     public function deleteItem()
     {
