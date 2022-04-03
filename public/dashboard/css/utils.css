@@ -1,0 +1,564 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.table-responsive {
+    margin: 30px 0;
+}
+
+.table-wrapper {
+    min-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+    min-width: 100%;
+}
+
+.table-title h2 {
+    margin: 8px 0 0;
+    font-size: 22px;
+}
+
+.table-title .btn {
+    color: #566787;
+    float: right;
+    font-size: 13px;
+    background: #fff;
+    border: none;
+    min-width: 50px;
+    border-radius: 2px;
+    border: none;
+    outline: none !important;
+    margin-left: 10px;
+}
+
+.table-title .btn:hover,
+.table-title .btn:focus {
+    color: #566787;
+    background: #f2f2f2;
+}
+
+.table-title .btn i {
+    float: left;
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.table-title .btn span {
+    float: left;
+    margin-top: 2px;
+}
+
+.search-box {
+    position: relative;
+    float: right;
+    width: 100%;
+}
+
+.search-box input {
+    height: 34px;
+    border-radius: 20px;
+    padding-left: 35px;
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+.search-box input:focus {
+    border-color: #3FBAE4;
+}
+
+.search-box i {
+    color: #a0a5b1;
+    position: absolute;
+    font-size: 19px;
+    top: 8px;
+    left: 10px;
+}
+
+table.table tr th,
+table.table tr td {
+    border-color: #e9e9e9;
+    vertical-align: middle;
+}
+
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+table.table td:last-child {
+    width: 130px;
+}
+
+table.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+table.table td a:hover {
+    color: #2196F3;
+}
+
+table.table td a.settings {
+    color: #2196F3;
+}
+
+table.table td a.view {
+    color: #03A9F4;
+}
+
+table.table td a.edit {
+    color: #967103;
+}
+
+table.table td a.delete {
+    color: #9b1b00;
+}
+
+table.table td i {
+    font-size: 19px;
+}
+
+.pagination {
+    float: right;
+    margin: 0 0 5px;
+}
+
+.pagination li a {
+    border: none;
+    font-size: 95%;
+    width: 30px;
+    height: 30px;
+    color: #999;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 30px !important;
+    text-align: center;
+    padding: 0;
+}
+
+.pagination li a:hover {
+    color: #666;
+}
+
+.pagination li.active a {
+    background: #03A9F4;
+}
+
+.pagination li.active a:hover {
+    background: #0397d6;
+}
+
+.pagination li.disabled i {
+    color: #ccc;
+}
+
+.pagination li i {
+    font-size: 16px;
+    padding-top: 6px
+}
+
+.hint-text {
+    float: left;
+    margin-top: 6px;
+    font-size: 95%;
+}
+
+table.table .avatar {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.status {
+    font-size: 40px;
+    margin: -3px 2px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 10px;
+}
+
+.text-success {
+    color: #08924c !important;
+}
+
+.text-info {
+    color: #62c9e8 !important;
+}
+
+.text-warning {
+    color: #FFC107 !important;
+}
+
+.text-danger {
+    color: #9b1b00 !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled) {
+    color: #fff;
+    background-color: #6b737b;
+}
+
+
+/* User Manage Style */
+
+.emp-profile {
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    width: 70%;
+    height: 100%;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.profile-head h5 {
+    color: #333;
+}
+
+.profile-head h6 {
+    color: #0062cc;
+}
+
+.profile-edit-btn {
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.proile-rating {
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+
+.proile-rating span {
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-head .nav-tabs {
+    margin-bottom: 5%;
+}
+
+.profile-head .nav-tabs .nav-link {
+    font-weight: 600;
+    border: none;
+}
+
+.profile-head .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #0062cc;
+}
+
+.profile-work {
+    padding: 14%;
+    margin-top: -15%;
+}
+
+.profile-work p {
+    font-size: 20px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.profile-work a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-work ul {
+    list-style: none;
+}
+
+.profile-tab label {
+    font-weight: 600;
+}
+
+.profile-tab p {
+    font-weight: 600;
+    color: #0062cc;
+}
+
+
+/* Confirm Modal */
+
+.deleteModal .modal-confirm {
+    color: #636363;
+    width: 400px;
+}
+
+.deleteModal .modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.deleteModal .modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.deleteModal .modal-confirm h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -10px;
+}
+
+.deleteModal .modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    border: none;
+    background: none;
+    color: var(--current-text-color);
+}
+
+.deleteModal .modal-confirm .modal-body {
+    color: #999;
+}
+
+.deleteModal .modal-confirm .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px 15px 25px;
+}
+
+.deleteModal .modal-confirm .modal-footer a {
+    color: #999;
+}
+
+.deleteModal .modal-confirm .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 9;
+    text-align: center;
+    border: 3px solid #f15e5e;
+}
+
+.deleteModal .modal-confirm .icon-box i {
+    color: #f15e5e;
+    font-size: 46px;
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.restoreModal .modal-confirm .icon-box i {
+    color: #60c7c1;
+}
+
+.restoreModal .modal-confirm .icon-box {
+    border: 3px solid #60c7c1;
+}
+
+.deleteModal .modal-confirm .btn,
+.deleteModal .modal-confirm .btn:active {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    min-width: 120px;
+    border: none;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.deleteModal .modal-confirm .btn-secondary {
+    background: #c1c1c1;
+}
+
+.deleteModal .modal-confirm .btn-secondary:hover,
+.deleteModal .modal-confirm .btn-secondary:focus {
+    background: #a8a8a8;
+}
+
+.deleteModal .modal-confirm .btn-danger {
+    background: #f15e5e;
+}
+
+.deleteModal .modal-confirm .btn-danger:hover,
+.deleteModal .modal-confirm .btn-danger:focus {
+    background: #ee3535;
+}
+
+.deleteModal .trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+
+/*  Done Modal */
+
+.DoneModal .modal-confirm {
+    color: #636363;
+    width: 325px;
+    font-size: 14px;
+}
+
+.DoneModal .modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.DoneModal .modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.DoneModal .modal-confirm h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+}
+
+.DoneModal .modal-confirm .form-control,
+.modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.DoneModal .modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.DoneModal .modal-confirm .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.DoneModal .modal-confirm .icon-box {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: var(--current-bg-color);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.DoneModal .modal-confirm .icon-box i {
+    font-size: 58px;
+    position: relative;
+    top: 3px;
+}
+
+.DoneModal .modal-confirm.modal-dialog {
+    margin-top: 80px;
+}
+
+.DoneModal .modal-confirm .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: var(--current-bg-color);
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+    width: 100%;
+}
+
+.DoneModal .modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+    background: #6fb32b;
+    outline: none;
+}
+
+.DoneModal .trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+.icon-box:before {
+    content: "";
+}
+
+.rowDeleted {
+    color: #fff;
+    background-color: #610000;
+}
+
+.rowDeleted:hover {
+    background-color: #3b0101;
+}
+
+.fancySearchRow {
+    display: grid;
+}
+
+.sortArrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,213 @@
+section.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#bagTitle {
+    display: flex;
+    flex-direction: row;
+    font: inherit;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#bagTitle img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#bagTitle h1 sub {
+    color: #ccc;
+}
+
+.bagBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bagBody .right {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.bagBody .left {
+    flex-grow: 1;
+    padding: 2%;
+    margin: 0 0 2% 2%;
+    box-shadow: 0 0 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 260px;
+}
+
+.bagBody .left .priceDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left .priceDetails .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceDetails .top .lineDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top .lineDetails sub {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.top .lineDetails h3,
+.top .lineDetails h2,
+.top .lineDetails h1 {
+    margin: 0;
+}
+
+.top .lineDetails .green {
+    color: green;
+}
+
+.top .lineDetails .red {
+    color: red;
+}
+
+.left .priceDetails .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceDetails .bottom p {
+    padding: 10px 2px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.priceDetails .bottom a {
+    text-decoration: none;
+    color: #2886e9;
+    font-size: 12px;
+}
+
+.priceDetails .bottom input[type=submit] {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+.bagBody .right .shoppingItem {
+    padding: 2%;
+    margin: 0 0 2% 2%;
+    box-shadow: 0 0 2px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.bagBody .right .shoppingItem .itemBody {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.bagBody .right .shoppingItem .itemFooter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.bagBody .right .shoppingItem .icon {
+    height: 35px;
+}
+
+.bagBody .right .shoppingItem .content {
+    width: 80%;
+    height: 100%;
+}
+
+.shoppingItem .content h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.shoppingItem .content p {
+    margin: 0;
+    padding: 2px 10px;
+    font-style: italic;
+    font-size: smaller;
+    color: #ccc;
+}
+
+.bagBody .right .shoppingItem .price {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.right .shoppingItem .price select {
+    width: 56px;
+    height: 40px;
+}
+
+.right .shoppingItem .price h1 {
+    color: red;
+    margin-top: 0;
+}
+
+.right .shoppingItem .price h1 sub {
+    color: rgba(255, 0, 0, 0.384);
+    font-size: 12px;
+}
+
+.itemBody .note {
+    background-color: #fef9eb;
+    border-inline-start: 5px solid #f8d21e;
+    padding: 10px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.itemBody .note p {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.itemBody .note a {
+    color: #2886e9;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    padding: 2px 10px;
+}
+
+.itemFooter li {
+    list-style-type: initial;
+}
+
+.itemFooter ul {
+    padding-right: 20px;
+    margin: 0;
+}
+
+.free {
+    color: green;
+}
+
+#allTotalPrices {
+    font-size: 30px;
+}
